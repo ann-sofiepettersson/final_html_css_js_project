@@ -1,0 +1,302 @@
+﻿body {
+    font-family: Georgia, Helvetica, sans-serif;
+    background-color: #b9afb2;
+}
+
+a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+h1, p {
+    color: #000000;
+    font-weight: bold;
+}
+
+h4 {
+    color: #000000;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+textarea {
+    text-align: left;
+}
+
+
+
+@media screen and (min-width: 1400px) {
+
+    .content {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .content {
+        width: 90%;
+        margin: auto;
+    }
+    .text-wrapper {
+        padding: 10px 20px 5px 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .container-fluid {
+        padding: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+@media screen and (max-width: 372px) {
+    .content {
+        width: 90%;
+        margin: auto;
+    }
+    .text-wrapper {
+        padding: 10px;
+    }
+}
+
+
+
+.header {
+    background-image: url("../images/header.png");
+    background-size: cover;
+    max-width: 100%;
+}
+
+.text-wrapper {
+    margin-top: 0;
+    background-color: white;
+    opacity: 0.5;
+    padding: 20px 20px 10px 25px;
+}
+
+.container-fluid .navbar-header {
+    text-align: center;
+}
+
+.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-toggle {
+    float: none;
+    margin: 8px auto 8px auto;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #000000;
+    color: #ffffff;
+
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:active,
+.navbar-default .navbar-toggle:focus {
+    background-color: #000000;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.nav-justified li a {
+    margin-bottom: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    margin-top: 91px;
+    background-color: #000000;
+}
+
+.nav {
+    margin-bottom: 0;
+}
+
+.nav li a {
+    padding: 14px 15px;
+    background-color: #000000;
+    height: 50px;
+    transition: 0.3s;
+}
+
+.nav li a:hover, .nav li a:focus, .nav li a:active {
+    color: #f5f5f5;
+    background-color: #000000;
+}
+
+.fa {
+    padding-right: 5px;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    padding-top: 25px;
+}
+
+#aboutSmartEvent {
+    border-bottom: solid 1px #797676;
+    padding: 20px 20px;
+    margin-bottom: 40px;
+}
+
+#event-form {
+    padding: 20px 20px;
+    border-bottom: solid 1px #797676;
+    margin-bottom: 40px;
+}
+
+form label {
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.form-inline .form-group {
+    display: block;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.text-box {
+    margin-top: 20px;
+}
+
+#save-event {
+    padding: 5px;
+    width: 100%;
+    background: #d9d9d9;
+    color: #000000;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#save-event:hover {
+    background-color: #bbb;
+}
+
+
+.panel-group .panel {
+    box-shadow: 2px 2px 2px 1px #797676;
+    margin-bottom: 12px !important;
+}
+
+.panel-days-left {
+text-align: right;
+}
+
+.panel-body input {
+    padding-top: 5px;
+}
+
+.panel-body col-sm-6 span {
+    padding:10px 30px 10px 0;
+}
+
+.panel-body span p {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.panel-body span p:last-child {
+    color: #797676;
+}
+
+
+
+/* Listor*/
+
+.todo-header, .shopping-header {
+
+    padding: 5px 40px;
+    color: #000000;
+    text-align: center;
+}
+
+
+.todoList li, .shoppingList li {
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    padding: 10px 8px 0 40px;
+    background: #eee;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.todoList li:nth-child(even), .shoppingList li:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.todoList li:hover, .shoppingList li:hover {
+    background: #ddd;
+}
+
+.todoList li.checked, .shoppingList li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+.todoList li.checked::before, .shoppingList li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+}
+
+.delete:hover {
+    background-color: #b9afb2;
+    opacity: 0.4;
+}
+
+.addNewItem {
+    padding: 5px;
+    width: 100%;
+    background: #d9d9d9;
+    color: #000000;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addNewItem:hover {
+    background-color: #bbb;
+}
